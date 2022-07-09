@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #000;
+  height: fit-content;
+  width: 100%;
+  max-width: 700px;
+}
+
+.title {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #008cff;
+  margin-top: 1rem;
+}
+
+.nav {
+  margin: 2rem 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #b3b3b3;
+  border: 1px solid #008cff;
+  padding: 5px 10px;
+  margin: 0 0.2rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.active {
+  background-color: #008cff;
+  color: #fff;
+  border: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  height: fit-content;
+  padding-bottom: 20px;
+  background-color: #9c9c9c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 35px;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+input {
+  height: 2rem;
+}
+input:focus,
+textarea:focus {
+  box-shadow: -2px 2px 5px rgb(83, 83, 83);
+  border: 1px solid #004177;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  color: #004177;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #004177;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.message {
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: 500;
+  visibility: hidden;
+}
+
+.success {
+  visibility: visible;
+  background-color: #00800044;
+  color: rgb(88, 245, 114);
+}
+.danger {
+  visibility: visible;
+  background-color: #80000044;
+  color: rgb(161, 25, 25);
+}

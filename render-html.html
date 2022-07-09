@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesse Ajioh JSON</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <p id="page" data-id="HTML"></p>
+    <header>
+      <h1 class="logo">Jesse Ajioh</h1>
+      <p class="title">Upload Resources to Website</p>
+      <div class="nav">
+        <a href="./render-html.html" class="link active">HTML</a>
+        <a href="./render-css.html" class="link">CSS</a>
+        <a href="./render-js.html" class="link">JAVASCRIPT</a>
+      </div>
+    </header>
+    <main>
+      <form name="tutorial">
+        <div class="form-input">
+          <label for="title">Title:</label>
+          <input
+            type="text"
+            id="title"
+            placeholder="e.g Intro to HTML"
+            autofocus
+          />
+        </div>
+        <div class="form-input">
+          <label for="type">Type:</label>
+          <input type="text" id="type" placeholder="e.g YouTube Video" />
+        </div>
+        <div class="form-input">
+          <label for="img">ImgURL:</label>
+          <input
+            type="text"
+            id="imgUrl"
+            placeholder="e.g https://website.com/image.jpg"
+          />
+        </div>
+        <div class="form-input">
+          <label for="details">Details:</label>
+          <textarea
+            name="details"
+            id="details"
+            cols="30"
+            rows="10"
+            placeholder="Enter the description"
+          ></textarea>
+        </div>
+        <div class="form-input">
+          <label for="link">Link:</label>
+          <input
+            type="text"
+            id="link"
+            placeholder="Enter the link to the material"
+          />
+        </div>
+
+        <p class="message"></p>
+
+        <button id="submit-btn" type="submit">Upload</button>
+      </form>
+    </main>
+    <script type="module" src="./javascript/index.js"></script>
+  </body>
+</html>
