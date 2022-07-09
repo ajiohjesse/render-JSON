@@ -11,6 +11,23 @@ body {
   align-items: center;
 }
 
+.container {
+  background-color: #fff;
+  width: 95%;
+  height: 200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.container h1 {
+  margin-bottom: 1rem;
+  color: #000f18;
+}
+.container p {
+  margin-bottom: 1rem;
+}
+
 header {
   display: flex;
   flex-direction: column;
