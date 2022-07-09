@@ -17,7 +17,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #000;
+  background-color: #000f18;
   height: fit-content;
   width: 100%;
   max-width: 700px;
@@ -61,7 +61,6 @@ main {
   width: 100%;
   max-width: 700px;
   height: fit-content;
-  padding-bottom: 20px;
   background-color: #9c9c9c;
 }
 
@@ -71,6 +70,9 @@ form {
   justify-content: center;
   width: 100%;
   padding: 10px 35px;
+  background-color: #1c5180;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 textarea {
@@ -79,30 +81,32 @@ textarea {
 }
 
 input {
-  height: 2rem;
-}
-input:focus,
-textarea:focus {
-  box-shadow: -2px 2px 5px rgb(83, 83, 83);
-  border: 1px solid #004177;
+  height: 3rem;
 }
 
 input,
 textarea {
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 0 10px;
   padding: 10px;
   background-color: rgb(243, 243, 243);
   width: 100%;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: -2px 2px 5px rgb(83, 83, 83);
 }
 
 label {
   font-weight: bold;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
-  color: #004177;
+  color: #ffffff;
+  background-color: #000f18;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .form-input {
@@ -117,7 +121,7 @@ button {
   width: 100%;
   padding: 10px;
   border: none;
-  background-color: #004177;
+  background-color: #000f18;
   border-radius: 4px;
   color: #fff;
   font-weight: bold;
